@@ -3,7 +3,7 @@
 This Python script utilizes the Selenium WebDriver to automate the process of extracting text from images using the OCR service provided by [https://ocr.sanskritdictionary.com](https://ocr.sanskritdictionary.com). The script is designed to work with the Firefox browser.
 
 ## Prerequisites
-- Ensure you have the [GeckoDriver](https://github.com/mozilla/geckodriver) executable installed and provide the correct path to it in the `Service` initialization.
+- Ensure you have the appropriate [GeckoDriver](https://github.com/mozilla/geckodriver) executable for your operating system. Download the executable and rename it according to your system: `geckodriver_mac` for macOS, `geckodriver_linux` for Linux, or `geckodriver_windows.exe` for Windows.
 
 ## Dependencies
 - This script relies on the Selenium library. If you don't have it installed, you can install it using:
@@ -12,19 +12,8 @@ This Python script utilizes the Selenium WebDriver to automate the process of ex
   ```
 
 ## Usage
-1. Customize the path to the GeckoDriver executable in the `Service` initialization:
-
-    ```python
-    service = Service('/path/to/geckodriver')
-    ```
-
-2. Adjust the loop parameters to match the number of pages you want to process:
-
-    ```python
-    for page_number in range(1, 4):  # Change the range accordingly
-    ```
-
-3. Run the script.
+1. Place the images in the HoMI-OCR directory containing the script and driver files.
+2. Run the script.
 
 ## Description
 1. The script opens the OCR service page in the Firefox browser.
@@ -40,4 +29,6 @@ This Python script utilizes the Selenium WebDriver to automate the process of ex
 Feel free to modify the script according to your specific requirements and ensure that you comply with the terms and conditions of the OCR service you are interacting with.
 
 ## Credits
-This script was created by [ChatGPT](https://www.openai.com/), a product of OpenAI.
+The program was created in partnership with [Shubham Gupta](https://github.com/brainspoof).
+
+This script and the program was assisted by [ChatGPT](https://www.openai.com/), a product of OpenAI.
